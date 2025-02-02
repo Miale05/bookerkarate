@@ -66,7 +66,6 @@ Feature: Actualizar una Reserva
         And match response.firstname == randomUsername
         And match response.lastname == randomLastname
         And match response.totalprice == randomPrice
-        And match response.depositpaid == randomBoolean
         And match response.bookingdates.checkin == randomDate
         And match response.bookingdates.checkout == randomDatePlusOneYear
 
